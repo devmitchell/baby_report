@@ -1,5 +1,6 @@
 <?php
   function workingOdds() {
+    // http://whentoexpect.com/?due=10%2F13%2F2017&type=2&token=35
     $laborProbabilities = array(
       '09/19' => 0,
       '09/20' => 1,
@@ -68,11 +69,16 @@
     h1 {
       font-size: 10em;
       text-align: center;
+      margin: 10px;
+    }
+    p {
+      font-size: 2em;
+      text-align: center;
     }
   </style>
 </head>
 <body>
-  <header>What are the odds Devin Comes in Today?</header>
+  <p>What Are the Odds Devin Comes in Today?</p>
   <?php
     // <h1>50%</h1>
     echo "<h1>" . workingOdds() . "%</h1>\n";
